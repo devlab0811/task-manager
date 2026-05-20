@@ -17,7 +17,7 @@ engine = create_engine(DATABASE_URL)
 
 # Cria fábrica de sessões
 SessionLocal = sessionmaker(
-    autocommite=False,
+    autocommit=False,
     autoflush=False,
     bind=engine
 )
